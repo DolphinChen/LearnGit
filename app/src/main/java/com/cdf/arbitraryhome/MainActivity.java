@@ -2,7 +2,6 @@ package com.cdf.arbitraryhome;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.support.v4.util.ArrayMap;
 import android.support.v4.util.Pair;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -12,7 +11,6 @@ import android.view.ViewGroup;
 import android.widget.AbsListView;
 import android.widget.BaseExpandableListAdapter;
 import android.widget.ExpandableListView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -20,6 +18,10 @@ import com.cdf.arbitraryhome.activities.PopupWindowActivity;
 
 import java.util.ArrayList;
 
+/**
+ * 这个是程序的主界面
+ * @author cdf
+ */
 public class MainActivity extends AppCompatActivity {
 
     private ExpandableListView mExpandableListView;
