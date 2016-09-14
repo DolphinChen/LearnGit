@@ -15,6 +15,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.cdf.arbitraryhome.activities.PopupWindowActivity;
+import com.cdf.arbitraryhome.activities.WaveAnimActivity;
 
 import java.util.ArrayList;
 
@@ -86,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
                 AbsListView.LayoutParams lp = new AbsListView.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
                 textView.setLayoutParams(lp);
                 textView.setGravity(Gravity.CENTER_VERTICAL | Gravity.LEFT);
-                textView.setPadding(20, 5, 5, 0);
+                textView.setPadding(20, 15, 15, 15);
                 textView.setTextSize(20);
                 convertView = textView;
             }
@@ -101,8 +102,8 @@ public class MainActivity extends AppCompatActivity {
                 AbsListView.LayoutParams lp = new AbsListView.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
                 textView.setLayoutParams(lp);
                 textView.setGravity(Gravity.CENTER_VERTICAL | Gravity.LEFT);
-                textView.setPadding(50, 5, 5, 0);
-                textView.setTextSize(15);
+                textView.setPadding(50, 15, 15, 15);
+                textView.setTextSize(18);
                 convertView = textView;
             }
             ((TextView) convertView).setText(getChild(groupPosition, childPosition).toString());
@@ -161,13 +162,13 @@ public class MainActivity extends AppCompatActivity {
         mActivityToJump.add(activities);
 
         // Item2:
-        parentItem = "PlaceHolder测试";
+        parentItem = "自定义视图测试";
         subItems = new ArrayList<>();
-        subItems.add("测试1");
-        subItems.add("测试2");
-        subItems.add("测试3");
-        subItems.add("测试4");
-
+        subItems.add("声波动效测试");
+        activities = new ArrayList<>();
+        activities.add(WaveAnimActivity.class);
         mData.add(new Pair<String, ArrayList<String>>(parentItem, subItems));
+        mActivityToJump.add(activities);
+
     }
 }

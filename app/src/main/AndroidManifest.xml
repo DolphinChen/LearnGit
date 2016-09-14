@@ -17,6 +17,7 @@
         </activity>
 
         <activity android:name=".activities.PopupWindowActivity"/>
+        <activity android:name=".activities.WaveAnimActivity"/>
     </application>
 
 </manifest>
